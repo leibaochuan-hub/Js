@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var secon = 1;
+        console.log("最终输出的值",secon);
+    </script>
+    <script>
+        function test1(){  //函数声明局部变量
+            var test2 = 100;
+            console.log("test2的输出:",test2);
+        }
+        test1();
+        // console.log("test2的输出:",test2) 此时为访问全局变量的方法  会出现报错。
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
