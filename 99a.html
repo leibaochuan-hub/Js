@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <script>
+            for(i=1;i<=10;i++){
+                document.write("<br/>");
+                for(j=1;j<=i;j++){
+                    console.log(j);
+                    document.write(j + "*" + i + "=" + j * i + "&nbsp;");                    
+                }
+            };
+
+        </script>
+        <!-- （1）外层循环控制乘法表的行，同时也是第2个数，最大是9行，所以循环从1开始，条件要小于10，即：i = 1; i < 10; i++
+
+        （2）内层循环控制着乘法表列，同时也是第1个数，从1开始，条件：第一个数要小于等于第二个数，即：j = 1; j <= i; j++
+        
+        （3）在内层循环中输出字符串的拼接，最后加个空格：document.write(j + "*" + i + "=" + j * i + "&nbsp;");
+        
+        （4）在外层的循环最后加一个换行，这样就能实现只要外层循环一次就换一行： document.write("<br/>"); -->
+</body>
+</html>
