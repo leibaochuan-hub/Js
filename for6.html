@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var hundreds;
+        var tens;
+        var ones;
+        for(i=1;i<=1000;i++){
+            hundreds = parseInt(i / 100);
+
+            tens = parseInt((i - (hundreds * 100)) / 10)
+
+            ones = i - (hundreds * 100) - (tens * 10);
+            if (hundreds * hundreds * hundreds + tens * tens * tens + ones * ones * ones == i){
+                document.write(i + "<br/>");
+            }
+        };
+        </script>
+</body>
+</html>

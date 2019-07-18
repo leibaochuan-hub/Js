@@ -11,11 +11,16 @@
       for(i=1;i<=3;i++){
             document.write(i+'<br />')
             document.write('<hr>')
-            for(j=1;j<=5;j++){
-                document.write(j+'<br />')
+            for(j=1;j<=i;j++){
+                for(d=1;d<=j;d++){
+                console.log(d);
+                document.write(d+'<br />')
+            }
+        
             }
       };
         
     </script>
+
 </body>
 </html>
