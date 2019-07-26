@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>数据方法</title>
+    <script>
+        //push方法  向数组的末尾继续添加参数  用法 数组名.push(需要添加的参数)
+        var sum = new Array('red','green');
+        sum.push(1,2,3,4);
+        alert(sum);
+
+        //unshift方法 向数组的前方继续添加参数  用法 数组名.unshift(需要添加的参数)
+        var sum = new Array('red','green');
+        sum.unshift(1,2,3,4);
+        alert(sum);
+        
+        //pop方法，删除数组最后一位参数，用法 接收变量=数组名.pop();
+        var n = sum.pop();
+        alert(n);
+        alert(sum);
+        
+        //shift方法，删除数组第一位参数，用法 接收变量=数组名.shift();
+        var n = sum.shift();
+        alert(n);
+        alert(sum);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
