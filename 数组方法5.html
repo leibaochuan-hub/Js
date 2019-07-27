@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>数组替换、删除、插入之splice</title>
+    <script>
+        var sum = new Array('a','b','c','d','e','f')
+        //删除,用法：接收的变量 =  需要删除的数组名.splice(参数1、参数2)
+        //参数1为需要删除的数组起始下标，参数2为从起始下标往后推几位，例如下方为1,2 
+        //实际则为 从1的下标 也就是对应b，b往后推两位 也就是 删除 bc，
+        //打印出来后，sum返回的值为已经删除后的新数组，sums返回的值则为被删除的参数
+        //如果第二个参数为0的情况下，则不执行删除操作
+        var sums = sum.splice(1,2);
+        alert(sum);
+        alert(sums);
+
+
+        //插入，用法接收的变量 =  需要插入的数组名.splice(参数1、参数2)
+        //参数1为起始增加的坐标，此坐标依旧读下标值，参数2必须为0
+        //比如以下数组 需要在b的后面添加 1，x,y 
+        //b的下标位置为1，在b后方添加参数 则需要+1，则为2，所以第一个参数需要为2，
+        //第一个，第二个参数全部填好后，后方则添加需要插入的参数即可 
+        var test = new Array('a','b','c','d','e','f')
+        var tests = test.splice(2,0,1,'x','y');
+        alert(test);
+        alert(tests);
+        
+        //替换，用法接收的变量 =  需要替换的数组名.splice(参数1、参数2，替换的参数)
+        //第一个参数第二个参数 可以理解为上方的删除参数
+        //总逻辑为 删除对应参数 并且后面添加的参数为删除后替换进去的参数
+        var age = new Array('a','b','c','d','e','f')
+        var ages = age.splice(1,2,'x','y')
+        document.write(ages);
+        alert(age);
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

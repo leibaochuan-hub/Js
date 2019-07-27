@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>数组相连</title>
+    <script>
+
+        //concat方法，为数组相连方法，用法为 接收变量 = 需要被连接的数组A.concat(需要被连接的数组2，【其他参数，可添加可不添加】)
+        var sum = new Array(1,2,3,5);
+        var sums = new Array('a','b','c')
+        var sum_sums = sum.concat(sums,['aa','cc']);
+        alert(sum_sums);
+
+        //slice方法，为数组参数截取方法，用法. 需要截取的数组名.slice(第一个参数=开始，第二个参数=结束)
+        //第一个参数如果为1 ， 则从数组的下标开始计算  0，1   第二个参数如果为4  则计算至下标为3的地方既停止， 既第二个参数-1
+        //如果第一个参数为负数， 假设这个负数为 -3   当前字段长度为5   那么可以理解为  5-3=2 则取下标值为2的长度开始进行截取操作
+        var test = new Array(1,2,3,4);
+        var test1 = new Array('a','b','c','d');
+        var test_test1 = test1.slice(1,4);
+        alert(test_test1);
+        var test_test1 = test1.slice(-3,5);
+        alert(test_test1);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

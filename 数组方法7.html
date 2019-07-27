@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>封装一个方法，实现数组内查找</title>
+    <script>
+        var sum = new Array(1, 2, 3, 4, 5, 7, 123, 123, 123, 6);
+        function test(arr, value) {
+            for (i = 0; i < arr.length; i++) {
+                if (arr[i] === value) {
+                    return i
+                }
+            }
+            return -1;   
+        }
+        var sums = test(sum, 123);
+        document.write(sums);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
