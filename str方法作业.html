@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        
+        var str = "JavaScript 是属于网络的脚本语言！JavaScript 被数百万计的网页用来改进设计、验证表单、检测浏览器、创建cookies，以及更多的应用。JavaScript 是因特网上最流行的脚本语言。JavaScript很容易使用！你一定会喜欢它的！"
+        var j = 0;
+        var len = str.length;
+        for(i=0;i<len;i++){
+            if(str[i] ==='J' && str.substr(i,10)==="JavaScript"){
+                j++
+                console.log(j);
+                document.write('JavaScript第'+j+'出现是在'+i+'的位置上'+'<br>')
+            }
+        }
+                document.write("JavaScript在这段话出现了"+j+"次")
+        
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
