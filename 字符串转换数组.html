@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>字符串转换数组</title>
+    <script>
+        //split方法，将分隔符内的字符串转换为数组
+        var str = 'wei/cometo/beijing';
+        str_zhuanhuan = str.split('/');
+        // document.write(str_zhuanhuan);
+
+        //replace将传入的参数替换，但是只能替换第一个
+        var str1 = 'A/A/A/A/A/A';
+        for(i=0;i<str1.length;i++){
+            if(str1[i]==='/'){
+                var zhuanhuan = str1.replace('/',' '); 
+                console.log(str1.replace('/',' '));
+                console.log("str:"+str1)
+                str1 = zhuanhuan;
+                console.log('zhuanhuan:'+zhuanhuan);
+                console.log('str1'+str1);
+                
+            }else{
+                '无指定的转换内容'
+            }
+        }
+        // str_zhuanhuan2 = str1.replace('/',' ');
+                document.write(zhuanhuan);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

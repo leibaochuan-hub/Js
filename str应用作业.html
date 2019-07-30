@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+         var em = prompt('请输入您的邮箱账号');
+        function test(em){
+            var pos = em.indexOf("@");
+            return '您邮箱的后戳是'+em.substr(pos+1)+'邮箱'+'<br>'+'您的邮箱账号是'+em.substr(0,pos)
+        }
+        var jieguo = test(em);
+        document.write(jieguo);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

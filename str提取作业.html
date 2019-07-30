@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>toUpperCase和toLowerCase</title>
+</head>
+<body>
+<script>
+    var str="Never deter till tomorrow that which you can do today";
+    var strs = str.indexOf('tomorrow');
+    console.log(strs);
+    var word = str.substr(strs,8).toUpperCase();//TOMORROW
+    var word1 = str.replace('tomorrow',word);
+    console.log(word1);
+    // console.log(word);
+    // var word1 = str.substr(0,strs);
+    // var word2 = str.substr(strs+8);
+    // console.log(word1 + word + word2);
+    // console.log(word1)
+    // console.log(word2)
+
+</script>
+</body>
+</html>

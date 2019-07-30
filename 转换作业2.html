@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var input = prompt('请输入您的手机号');
+        // pos = input.substr(8,12);
+        pos = input.replace(input.slice(0,8),'*******')
+        document.write(pos);
+        // pos.slice(1,5,"*")
+        
+        
+            //  pos = input.substr(0,7)
+            // document.write(pos);
+    </script>
+</body>
+</html>

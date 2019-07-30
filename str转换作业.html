@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function test(arr) {
+            var word = arr.split(' ');
+            console.log(word);
+            var word_all = '';
+            for (i = 0; i < word.length; i++) {
+                console.log('i=' + i);
+                var word1 = word[i]
+
+                console.log('word1=' + word1);
+                var word2 = word1.charAt(0).toUpperCase();
+                console.log('word2=' + word2);
+                var word3 = word2 + word1.substr(1);
+                console.log('word3=' + word3);
+                word[i] = word3;
+                console.log('word=' + word)
+                // word_all+=word3; // =str
+                // console.log('word_all='+word_all);
+                // console.log(typeof(word_all));
+
+            }
+            // word.join(' ')
+            return document.write(word.join(' '));
+        }
+
+        test('abc dfg wowo asasas')
+    </script>
+    <script>
+        function upperToInitial(str) {
+            var arr = str.split(" "); //转数组
+            var newStr = "";
+            for (var i = 0; i < arr.length; i++) {
+                var s = arr[i];
+                newStr += s.charAt(0).toUpperCase() + s.substr(1) + " ";
+            }
+            return newStr;
+        }
+        var s = "all time is no time when it is past";
+        document.write(upperToInitial(s));
+    </script>
+</body>
+
+</html>
