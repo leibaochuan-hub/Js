@@ -18,13 +18,13 @@
                 console.log('i=' + i);
                 var word1 = word[i]
 
-                console.log('word1=' + word1);
+                console.log('word第一次出现=' + word);
                 var word2 = word1.charAt(0).toUpperCase();
                 console.log('word2=' + word2);
                 var word3 = word2 + word1.substr(1);
                 console.log('word3=' + word3);
                 word[i] = word3;
-                console.log('word=' + word)
+                console.log('word第二次出现' + word)
                 // word_all+=word3; // =str
                 // console.log('word_all='+word_all);
                 // console.log(typeof(word_all));
@@ -36,7 +36,7 @@
 
         test('abc dfg wowo asasas')
     </script>
-    <script>
+    <!-- <script>
         function upperToInitial(str) {
             var arr = str.split(" "); //转数组
             var newStr = "";
@@ -48,7 +48,7 @@
         }
         var s = "all time is no time when it is past";
         document.write(upperToInitial(s));
-    </script>
+    </script> -->
 </body>
 
 </html>
