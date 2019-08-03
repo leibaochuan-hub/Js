@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>改变日期格式</title>
+</head>
+<body>
+<script>
+    //补充代码
+    var date = new Date();
+    console.log(date);
+    var b;
+    console.log('他的类型是'+typeof(b));
+    function time(times){
+        FunllYear = date.getFullYear();//年
+        Month = date.getMonth()+1;//月
+        dates = date.getDate();//天
+        Day = date.getDay();//星期
+        Hours = date.getHours();//小时
+        Minutes = date.getMinutes();//分
+        console.log('Minutes的分钟是'+Minutes);
+        console.log('Minutes的类型是'+typeof(Minutes))
+        Seconds = date.getSeconds();//秒
+        times = new Array('星期天','星期一','星期二','星期三','星期四','星期五','星期六')
+        time_time = times[Day];
+        function time_1(a){
+            if(a<10){
+                a = '0'+ a
+            }
+            return a
+        }
+        return document.write('今天是'+FunllYear+'年'+Month+'月'+dates+'日'+time_time+'<br>'+time_1(Hours)+':'+time_1(Minutes)+':'+time_1(Seconds))
+    }
+    
+    time(date)
+    
+
+    
+
+    
+
+    // time_1(time.Minutes);
+    
+
+</script>
+</body>
+</html>
