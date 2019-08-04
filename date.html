@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>员工合同到期时间</title>
+</head>
+<body>
+<script>
+    //?代码补充
+    var input1 = parseInt(prompt('请输入员工的入职年份'));
+    console.log('input1的类型是'+typeof(input1)+input1);
+    var input2 = parseInt(prompt('请输入员工的入职月份'));
+    var input3 = parseInt(prompt('请输入员工的入职时间'));
+    
+    
+    document.write(times(input1,input2,input3));
+    var a = new Date();
+    console.log(a.getMonth())
+    
+    function times(time1,time2,time3){
+         var time = new Date();
+         time.setFullYear(time1,time2,time3);
+         ruzhi = '该员工入职的时间是'+time_time(time.getUTCFullYear())+'-'+time_time(time.getUTCMonth())+'-'+time_time(time.getUTCDay());
+         function time_time(a){
+            if(a<10){
+                a = '0'+ a
+            }
+            return a
+        }
+         daoqi = '该员工合同到期的时间是'+time_time((time.getUTCFullYear()+3))+'-'+time_time(time.getUTCMonth())+'-'+time_time((time.getUTCDay()-1));
+         return ruzhi + '<br>' + daoqi;
+
+
+    }
+
+    
+</script>
+</body>
+</html>
+
