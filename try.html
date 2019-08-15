@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>try错误捕获</title>
+</head>
+<body>
+    <script>
+       
+        try{
+            var sum = null;
+            console.log(sum.foo);
+        }catch(sums){
+            console.log(sums)
+        }finally{
+            console.log(2);
+        }
+    </script>
+</body>
+</html>
