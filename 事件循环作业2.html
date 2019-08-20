@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>信息录入</title>
+</head>
+<body>
+    <input type="button" value="录入" >
+    <script type="text/javascript">
+	    var inputs=document.getElementsByTagName("input");
+        console.log(inputs)
+	    var entry=inputs[0];
+	    entry.onclick=entryFn;
+        
+		function entryFn(){
+	    	//补充代码
+            var shuzu = new Array();
+            var sum;
+            while(sum != "-1"){
+                sum =prompt('请输入员工姓名'); 
+                shuzu.push(sum);
+            }
+            for(i=0;i<shuzu.length;i++){
+                document.write('录入的第'+(i+1)+'个员工是'+shuzu[i]+'<br/>')
+                shuzu.pop(shuzu[i]-1)
+            }
+           
+		}
+	</script>
+</body>
+</html>

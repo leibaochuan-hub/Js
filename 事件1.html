@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .btn{
+            color: burlywood;font-size: 25px;width: 100px;
+            height: 100px;line-height: 100px;text-align: center;
+            background-color: blanchedalmond;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <div  id="btn" class="btn" onmouseover="test(this,'red')" onmouseout="test(this,'blue')">开始</div>
+    <div  id="btn" class="btn" onmouseover="test(this,'orange')" onmouseout="test(this,'darkgreen')">结束</div>
+    <script>
+            function test(btn,bgcolor){
+               console.log(btn)
+               btn.style.background=bgcolor;
+            }
+
+            // function test1(bth,bgcolor) {
+            //     btn.style.background=bgcolor;
+            // }
+        </script>
+</body>
+</html>
