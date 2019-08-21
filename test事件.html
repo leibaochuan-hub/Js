@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <ul id = 'test'>
+        <li>前端</li>
+        <li>后端</li>
+        <li>大前端</li>
+    </ul> -->
+    <!-- <script>
+        // test = document.getElementById('test').getElementsByTagName('li');
+        // document.write(test);
+    </script> -->
+    <script type="text/javascript">
+        function getElements()
+          {
+          var x=document.getElementsByTagName("input");
+          alert(x.length);
+          console.log(x[3])
+          document.write(x);
+          }
+        </script>
+      
+       
+        
+        <input name="myInput" type="text" size="20" /><br />
+        <input name="myInput" type="text" size="20" /><br />
+        <input name="myInput" type="text" size="20" /><br />
+        <br />
+        <input type="button" onclick="getElements()"
+        value="How many input elements?" />
+       
+</body>
+</html>
