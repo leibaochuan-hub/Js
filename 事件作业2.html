@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>onload</title>
+    <script>
+        window.onload = function () {
+            var sum = document.getElementById('test1')
+            sum.onclick = test;
+            function test() {
+                this.style.color = 'red';
+            }
+            sum.onmouseout = test2;
+            function test2() {
+                this.style.color = '#FF00FF'
+            }
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <input type="button" value="点击改变按钮字体颜色" id='test1'>
+
+</body>
+
+</html>

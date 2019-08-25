@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>onblur和onfocus</title>
+    <style type="text/css">
+        .red{
+    		border:1px solid red;
+    	}
+        .wenben1{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    姓名：<input type="text" id = 'wenben'> 
+    <span class="wenben1" id = 'wenben2'>请输入您的姓名</span>
+	<script type="text/javascript">
+		// 补充代码
+        // 小伙伴们，今天我们学习了onblur和onfocus这两个鼠标事件，根据效果图，补充代码，实现下列功能：
+
+        // （1）   当输入框获得焦点：
+
+        // 如果输入框值为空，提示“请输入您的姓名”
+
+        // （2）   当输入框失去焦点：
+
+        // 如果输入框值为空，提示“用户名不能为空”，并且边框颜色变为红色
+
+        // 如果输入框值不为空，那么没有提示文字，边框颜色是默认颜色
+        var sum = document.getElementById('wenben');
+        var sum1 = document.getElementById('wenben2')
+        sum.onfocus = function(){
+            console.log(this);
+            sum1.style.display = 'inline';
+        }
+        sum.onblur = function(){
+            console.log(this.value)
+            if(this.value ==''){
+                sum1.style.display = 'inline';
+                sum1.innerHTML = '用户名不能为空'
+                this.className = 'red';
+            }else if(this.value !=''){
+                console.log('zhengque')
+            }
+           
+        }
+	</script>
+</body>
+</html>
