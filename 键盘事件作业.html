@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+	    <meta charset="UTF-8">
+	    <title>输入文本</title>
+	</head>
+	<body>
+		<p>字数限制在30字内，<span>您还可以输入<b id = 'b'>30</b> 字</span></p>
+		<textarea cols="50"  rows="7"  id="text"></textarea>
+		<script type="text/javascript">
+			//补充代码
+            // var doc = document.getElementById('text');
+            // doc.onkeyup = function(event){
+            //     var zongshu = 30;
+            //     var len = doc.value.length;
+            //     console.log(len);
+            //     var sum = zongshu-len;
+            //     b.innerHTML = sum
+            // }
+            // var b = document.getElementById('b');
+            
+             var text = document.getElementById('text');
+            text.onchange = function(event){
+                var zongshu = 30;
+                var len = text.value.length;
+                console.log(len);
+                var sum = zongshu-len;
+                b.innerHTML = sum
+            }
+            var b = document.getElementById('b');
+		</script>
+	</body>
+</html>

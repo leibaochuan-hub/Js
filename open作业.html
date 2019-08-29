@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>打开/关闭页面</title>
+    </head>
+    <body>
+       <input type="button" name="" value="打开页面" id = 'sum'>
+       <script type="text/javascript">
+           //补充代码
+           var sum = document.getElementById('sum');
+           sum.onclick = function(){
+               var sums = confirm('确认框');
+               console.log(sums)
+               if(sums == true){
+                   window.open("http://www.w3school.com.cn")
+               }else{
+                   window.close();
+               }
+           }
+       </script>
+    </body>
+</html>
