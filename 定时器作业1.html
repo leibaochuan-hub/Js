@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>闪烁的文字</title>
+    <style type="text/css">
+        div {
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            border: 2px solid gray;
+            text-align: center;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>会闪烁的文字</h3>
+    <div id="text"> </div>
+    <script type="text/javascript">
+        // //补充代码
+        // var num = 0;
+        var text = document.getElementById('text');
+        // var time = setTimeout(time1,500);
+        // function time1(){
+        //     console.log(num);
+        //     num++;
+
+        //     if(num%2 == 1){
+        //         text.innerHTML = '☆☆☆今日特卖☆☆☆'
+        //         setTimeout(time1,500)
+        //     }else{
+        //         text.innerHTML = '★★★今日特卖★★★'
+        //         setTimeout(time1,500)
+        //     }
+        //     console.log(num);
+        // }
+
+        function test() {
+            var sum = new Array(1, 2);
+            len = sum.length;
+
+            for (i = 0; i < len; i++) {
+                if (sum[i]%2==0) {
+                    setTimeout(
+                        function () {
+                            text.innerHTML = '☆☆☆今日特卖☆☆☆'
+                        }, 500
+                    )
+                } else{
+                    setTimeout(function () {
+                        text.innerHTML = '★★★今日特卖★★★'
+                    }, 500)
+
+                }
+                console.log(i)
+            }
+        }
+        test();
+    </script>
+</body>
+
+</html>

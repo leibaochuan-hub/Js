@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box1{width: 100px;height: 1000px;background-color: blue;}
+        .box2{width: 100px;height: 1000px;background-color: blueviolet;}
+    </style>
+</head>
+<body>
+    <div class="box1" id = 'hezi1'></div>
+    <div class="box2"></div>
+    <input type="button" id = 'btn' value="返回顶部">
+    <script>
+        var btn = document.getElementById('btn');
+        btn.onclick = function(){
+            location.hash = '#hezi1'
+        }
+    </script>
+</body>
+</html>
